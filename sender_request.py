@@ -14,9 +14,8 @@ def get_order_track():
 track = get_order_track()
 print("track is", track)
 
-def get_order_id(id):
-    responce = requests.get(config.stand_url + config.get_order_id_from_track+ "?t=" + str(id))
-    assert responce.status_code == 200
+def get_order_id(tr):
+    responce = requests.get(config.stand_url + config.get_order_id_from_track+ "?t=" + str(tr))
     return responce.json()['order']['id']
 
 get_id = get_order_id(track)
