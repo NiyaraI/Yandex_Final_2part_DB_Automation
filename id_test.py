@@ -1,6 +1,6 @@
+# Нияра Иванова, 17-я когорта — Финальный проект. Инженер по тестированию плюс
 import requests
 import config
-import data
 import sender_request
 
 def test_get_order_id():
